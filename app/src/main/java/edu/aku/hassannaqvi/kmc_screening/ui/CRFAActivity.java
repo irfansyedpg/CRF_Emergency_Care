@@ -15,7 +15,6 @@ import org.json.JSONObject;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -26,7 +25,7 @@ import edu.aku.hassannaqvi.kmc_screening.core.MainApp;
 import edu.aku.hassannaqvi.kmc_screening.databinding.ActivityABinding;
 import edu.aku.hassannaqvi.kmc_screening.other.DiseaseCode;
 import edu.aku.hassannaqvi.kmc_screening.util.Util;
-import edu.aku.hassannaqvi.kmc_screening.validation.AutoDesigner;
+import edu.aku.hassannaqvi.kmc_screening.validation.UIirfan;
 import edu.aku.hassannaqvi.kmc_screening.validation.ValidatorClass;
 
 import static edu.aku.hassannaqvi.kmc_screening.core.MainApp.fc;
@@ -218,7 +217,7 @@ public class CRFAActivity extends AppCompatActivity {
     {
 
 
-        AutoDesigner.EmptyCheckingContainer(this, bi.GrpCRFA);
+        UIirfan.findViews( bi.GrpCRFA,this);
 
 
 

@@ -327,7 +327,7 @@
     <style name="i_q_textview">
 
         <item name="android:textAllCaps">true</item>
-        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textSize">16sp</item>

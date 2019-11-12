@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.text.format.DateFormat;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
@@ -31,7 +30,7 @@ import edu.aku.hassannaqvi.kmc_screening.core.MainApp;
 import edu.aku.hassannaqvi.kmc_screening.databinding.ActivityBBinding;
 import edu.aku.hassannaqvi.kmc_screening.other.DiseaseCode;
 import edu.aku.hassannaqvi.kmc_screening.util.Util;
-import edu.aku.hassannaqvi.kmc_screening.validation.AutoDesigner;
+import edu.aku.hassannaqvi.kmc_screening.validation.UIirfan;
 import edu.aku.hassannaqvi.kmc_screening.validation.ValidatorClass;
 
 import static edu.aku.hassannaqvi.kmc_screening.core.MainApp.fc;
@@ -66,7 +65,7 @@ public class CRFBActivity extends AppCompatActivity {
 
         setupViews();
 
-        AutoDesigner.EmptyCheckingContainer(this, bi.GrpCRFB);
+        UIirfan.findViews(bi.GrpCRFB,this);
     }
 
     private void setupViews() {

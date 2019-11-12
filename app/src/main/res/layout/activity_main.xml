@@ -363,7 +363,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_centerHorizontal="true"
                                     android:layout_centerVertical="true"
-                                    android:text="Design"
+                                    android:text="UI Settings"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                                     android:textColor="@color/colorPrimaryDark" />
 

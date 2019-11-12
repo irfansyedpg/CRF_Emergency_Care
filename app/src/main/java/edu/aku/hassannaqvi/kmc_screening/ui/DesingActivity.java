@@ -54,6 +54,18 @@ public class DesingActivity extends AppCompatActivity implements CompoundButton.
 
     }
 
+    public  void btnclic()
+    {
+        this.finish();
+
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You can't go back.", Toast.LENGTH_SHORT).show();
+    }
+
     public  void events()
     {
 
@@ -75,6 +87,11 @@ public class DesingActivity extends AppCompatActivity implements CompoundButton.
         bi.rbCbNormal.setOnCheckedChangeListener(this);
         bi.rbCbLarage.setOnCheckedChangeListener(this);
         bi.rbCbXlarage.setOnCheckedChangeListener(this);
+
+        bi.rbEdSmall.setOnCheckedChangeListener(this);
+        bi.rbEdNormal.setOnCheckedChangeListener(this);
+        bi.rbEdLarage.setOnCheckedChangeListener(this);
+        bi.rbEdXlarage.setOnCheckedChangeListener(this);
 
     }
 
@@ -215,6 +232,59 @@ public class DesingActivity extends AppCompatActivity implements CompoundButton.
             bi.cbexp.setText("Checkbox Lable Size is Extra Large");
         }
 
+
+        else if(buttonView==bi.rbEdSmall && bi.rbEdSmall.isChecked())
+        {
+
+
+            bi.edexp.setTextSize(16);
+
+            editor.putInt("edtxt", 16);
+
+
+
+            bi.edexp.setText("Editext Size Small");
+        }
+
+        else if(buttonView==bi.rbEdNormal && bi.rbEdNormal.isChecked())
+        {
+
+
+            bi.edexp.setTextSize(20);
+
+            editor.putInt("edtxt", 20);
+
+
+
+            bi.edexp.setText("Editext Size Normal");
+        }
+
+        else if(buttonView==bi.rbEdLarage && bi.rbEdLarage.isChecked())
+        {
+
+
+            bi.edexp.setTextSize(24);
+
+            editor.putInt("edtxt", 24);
+
+
+
+            bi.edexp.setText("Editext Size large");
+        }
+
+
+        else if(buttonView==bi.rbEdXlarage && bi.rbEdXlarage.isChecked())
+        {
+
+
+            bi.edexp.setTextSize(26);
+
+            editor.putInt("edtxt", 26);
+
+
+
+            bi.edexp.setText("Editext Size extra large");
+        }
 // txt label ends
 
 
